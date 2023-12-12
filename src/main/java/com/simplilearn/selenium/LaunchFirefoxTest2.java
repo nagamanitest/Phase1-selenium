@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class LaunchFirefoxTest2 {
 	
@@ -14,15 +14,15 @@ public class LaunchFirefoxTest2 {
 		//step1: formulate the test domain Url and driver path.
 		
 		String url = "https:/www.google.com/";
-		String driverpath = "drivers/Window/chromedriver.exe";
+		String driverpath = "drivers/Window/geckodriver.exe";
 		
 		//step2:set selenium properties for webdriver.
 		
-		System.setProperty("webdriver.chrome.driver",driverpath);
+		System.setProperty("webdriver.geckodriver.driver",driverpath);
 		
 		//step3://instantiate selenium webdriver
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver();
 		
 		step4://launch browser
 		
